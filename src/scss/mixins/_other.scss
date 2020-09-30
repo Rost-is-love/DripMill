@@ -1,0 +1,11 @@
+@mixin btn-reset {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+
+@mixin flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

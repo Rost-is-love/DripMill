@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+  <link rel="stylesheet" href="css/main.min.css">
+  <title>Наши контакты</title>
+</head>
+
+<body data-id-page="contacts" class="fadein">
+  <div class="site-container">
+    <div class="wrapper">
+      <section class="contacts">
+        <div class="section-body">
+          @include('html/header.html')
+          <div class="container contacts__container">
+            <div class="contacts__main">
+              <div class="contacts__info">
+                <h3 class="contacts__title">на связи с 9:00 до 19:00 мск.</h3>
+                <a href="tel:+79730987334" class="phone-number contact">+7 937 098 73 34</a>
+                <a href="mailto:hello@dripmill.com" class="email contact">hello@dripmill.com</a>
+                <a href="order.html" class="order-link contact">заполнить бриф</a>
+              </div>
+              @include('html/social.html')
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <!-- @include('html/h1.html') пример инклуда -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>

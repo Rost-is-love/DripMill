@@ -1,0 +1,29 @@
+.first {
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 50px;
+  min-height: 100vh;
+  background-image: url("../img/background-logo.svg");
+  background-position: center;
+  background-size: 193%;
+  background-repeat: no-repeat;
+
+  &__main {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+
+  &__title {
+    max-width: 80%;
+    font-weight: 800;
+    font-size: vw(150);
+    line-height: vw(120);
+    letter-spacing: -0.02em;
+    color: var(--color-black);
+
+    &--blue {
+      color: var(--color-blue);
+    }
+  }
+}

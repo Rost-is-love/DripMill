@@ -1,0 +1,45 @@
+<form action="" method="POST" class="form">
+  <div class="project form__item">
+    <span class="form-title project__title">проект</span>
+    <div class="project__items">
+      <label class="project__label"><input type="checkbox" name="Чего желают" value="Логотип" class="project__input"><span class="project__item project__item--logo"></span></label>
+      <label class="project__label"><input type="checkbox" name="Чего желают" value="Фирменный стиль" class="project__input"><span class="project__item project__item--identity"></span></label>
+      <label class="project__label"><input type="checkbox" name="Чего желают" value="Сайт визитка" class="project__input"><span class="project__item project__item--site"></span></label>
+      <label class="project__label"><input type="checkbox" name="Чего желают" value="Лендинг" class="project__input"><span class="project__item project__item--landing"></span></label>
+      <label class="project__label"><input type="checkbox" name="Чего желают" value="Другое" class="project__input"><span class="project__item project__item--other"></span></label>
+    </div>
+  </div>
+  <div class="company form__item">
+    <span class="form-title company__title">компания</span>
+    <label class="company__label"><input type="text" name="Компания" value="" class="form-input company__input"></label>
+  </div>
+  <div class="task form__item">
+    <span class="form-title task__title">задача и сроки</span>
+    <textarea name="Задача и сроки" class="textarea"></textarea>
+  </div>
+  <div class="budget form__item">
+    <span class="form-title budget__title">бюджет</span>
+    <div class="budget__items">
+      <label class="budget__label"><input type="radio" name="Бюджет" value="До 50 000 Р." class="budget__input"><span class="budget__item budget__item--min"></span></label>
+      <label class="budget__label"><input type="radio" name="Бюджет" value="До 100 000 Р." class="budget__input"><span class="budget__item budget__item--mid"></span></label>
+      <label class="budget__label"><input type="radio" name="Бюджет" value="До 300 000 Р." class="budget__input"><span class="budget__item budget__item--max"></span></label>
+      <label class="budget__label"><input type="radio" name="Бюджет" value="Похуй" class="budget__input"><span class="budget__item budget__item--other"></span></label>
+    </div>
+  </div>
+  <div class="customer-name form__item">
+    <span class="form-title customer-name__title">имя</span>
+    <label class="customer-name__label"><input type="text" name="Имя клиента" value="" class="form-input customer-name__input"></label>
+  </div>
+  <div class="customer-phone form__item">
+    <span class="form-title customer-phone__title">телефон</span>
+    <label class="customer-phone__label"><input type="tel" data-validate-field="tel" placeholder="или мессенджер" name="Телефон" value="" class="form-input customer-phone__input"></label>
+  </div>
+  <div class="customer-email form__item">
+    <span class="form-title customer-email__title">почта</span>
+    <label class="customer-email__label"><input type="email" data-validate-field="email" name="Почта" value="" class="form-input customer-email__input"></label>
+  </div>
+
+  <button type="submit" class="form__btn">отправить заявку</button>
+  <span class="form__consent">Нажимая кнопку «Отправить заявку» 
+    я даю свое согласие на обработку персональных данных</span>
+</form>

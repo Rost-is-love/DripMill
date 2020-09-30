@@ -1,0 +1,40 @@
+.contacts {
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 50px;
+  min-height: 100vh;
+  background-image: url("../img/russia.svg");
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+
+  &__main {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 50px;
+  }
+}
+
+.order-link {
+  color: var(--color-blue);
+  transition: color 0.3s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    color: #ff4664;
+    transition: color 0.3s ease-in-out;
+  }
+}
+
+.contact {
+  font-weight: 700;
+  font-size: vw(140);
+  line-height: vw(120);
+  letter-spacing: -0.02em;
+}

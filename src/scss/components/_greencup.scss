@@ -1,0 +1,173 @@
+.greencup {
+  margin-top: 50px;
+
+  &__container {
+    padding: 0;
+    max-width: 1920px;
+  }
+
+  &__text {
+    margin-bottom: 55px;
+  }
+
+  &__title {
+    max-width: 40vw;
+  }
+
+  &__dsr {
+    margin-top: 20px;
+    max-width: 50vw;
+  }
+
+  &__sub-title {
+    margin: 45px 0 20px;
+  }
+
+  &__second-dsr {
+    max-width: 50vw;
+  }
+}
+
+.gallery {
+  margin: 0 auto;
+  max-width: 1920px;
+
+  &__img {
+    &:nth-child(2) {
+      margin-bottom: -7px;
+    }
+  }
+}
+
+.first-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  &__item {
+    &--height {
+      grid-row: span 2;
+    }
+  }
+
+  &__img {
+    margin-bottom: -7px;
+  }
+}
+
+.second-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  &__item {
+    &--text {
+      padding: vw(100) 0 0 20px;
+    }
+  }
+
+  &__img {
+    margin-bottom: -7px;
+  }
+
+  &__slogan {
+    font-weight: 700;
+    font-size: vw(150);
+    line-height: vw(120);
+    color: #9be55c;
+  }
+}
+
+@media (min-width: 1920px) {
+  .second-box__item--text {
+    padding: 100px 0 0 20px;
+  }
+
+  .second-box__slogan {
+    font-size: 150px;
+    line-height: 120px;
+  }
+}
+
+.work-title {
+  font-weight: 500;
+  font-size: vw(50);
+  line-height: vw(60);
+  color: var(--color-black);
+}
+
+.work-dsr {
+  font-weight: 400;
+  font-size: vw(32);
+  line-height: vw(40);
+  color: var(--color-black);
+}
+
+.wrapper-text {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.work-text {
+  margin-right: 280px;
+}
+
+.work-img-1 {
+  width: 100%;
+  height: vw(740);
+  background-color: #353b3d;
+}
+
+.sub-title {
+  font-weight: 500;
+  font-size: 50px;
+  color: var(--color-black);
+}
+
+.footer-work {
+  padding: 50px 0 45px;
+
+  &__container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+
+  &__left {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  &__text {
+    margin-left: 60px;
+  }
+}
+
+.designer-name {
+  max-width: 260px;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 40px;
+  color: var(--color-black);
+}
+
+.copywriter-name {
+  margin-bottom: 40px;
+  max-width: 260px;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 40px;
+  color: var(--color-black);
+}
+
+.to-behace {
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 60px;
+  color: var(--color-black);
+  transition: color 0.3s ease-in-out;
+
+  &:hover {
+    color: var(--color-blue);
+    transition: color 0.3s ease-in-out;
+  }
+}
