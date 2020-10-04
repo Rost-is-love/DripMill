@@ -1,7 +1,7 @@
 .contacts {
   display: flex;
   align-items: flex-end;
-  padding-bottom: 50px;
+  padding-bottom: 15px;
   min-height: 100vh;
   background-image: url("../img/russia.svg");
   background-position: center;
@@ -15,13 +15,21 @@
   }
 
   &__title {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-weight: 500;
     font-size: 50px;
+    color: var(--color-gray);
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 65px;
   }
 }
 
 .order-link {
+  font-size: vw(120);
   color: var(--color-blue);
   transition: color 0.3s ease-in-out;
   cursor: pointer;
@@ -34,7 +42,14 @@
 
 .contact {
   font-weight: 700;
-  font-size: vw(140);
   line-height: vw(120);
   letter-spacing: -0.02em;
+}
+
+.phone-number {
+  font-size: vw(100);
+}
+
+.email {
+  font-size: vw(120);
 }
