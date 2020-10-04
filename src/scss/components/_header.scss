@@ -15,6 +15,7 @@
 }
 
 .logo {
+  z-index: 100;
   display: inline-block;
   width: 120px;
   height: 122px;
@@ -46,7 +47,7 @@
     }
 
     &:not(:first-child) {
-      margin-left: 37px;
+      margin-left: 43px;
     }
   }
 
