@@ -1,11 +1,10 @@
 .first {
   display: flex;
   align-items: flex-end;
-  padding-bottom: 50px;
+  padding-bottom: 15px;
   min-height: 100vh;
   background-image: url("../img/background-logo.svg");
   background-position: center;
-  background-size: 193%;
   background-repeat: no-repeat;
 
   &__main {
@@ -15,14 +14,16 @@
   }
 
   &__title {
-    max-width: 80%;
+    margin-bottom: 65px;
+    max-width: 60%;
     font-weight: 800;
-    font-size: vw(150);
+    font-size: vw(120);
     line-height: vw(120);
     letter-spacing: -0.02em;
     color: var(--color-black);
 
     &--blue {
+      margin: 0;
       color: var(--color-blue);
     }
   }
