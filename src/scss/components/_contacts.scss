@@ -3,10 +3,6 @@
   align-items: flex-end;
   padding-bottom: 15px;
   min-height: 100vh;
-  background-image: url("../img/russia.svg");
-  background-position: center;
-  background-size: 100%;
-  background-repeat: no-repeat;
 
   &__main {
     display: flex;
@@ -17,7 +13,7 @@
   &__title {
     margin-bottom: 10px;
     font-weight: 500;
-    font-size: 50px;
+    font-size: vw(50);
     color: var(--color-gray);
   }
 
@@ -52,4 +48,136 @@
 
 .email {
   font-size: vw(120);
+}
+
+.contacts-bg-img {
+  z-index: 0;
+  fill: var(--color-gray-bg);
+}
+
+.contacts-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  &__1 {
+    position: absolute;
+    left: 19vw;
+    top: 4.5vh;
+    width: vw(75);
+    height: vw(81);
+    transform: rotate(-30deg);
+  }
+
+  &__2 {
+    position: absolute;
+    left: 33.5vw;
+    top: -2.5vw;
+    width: vw(190);
+    height: vw(190);
+    transform: rotate(45deg);
+  }
+
+  &__3 {
+    position: absolute;
+    left: 58.5vw;
+    top: 100px;
+    width: vw(58);
+    height: vw(62);
+    transform: rotate(150deg);
+  }
+
+  &__4 {
+    position: absolute;
+    left: 77vw;
+    top: 27vh;
+    width: vw(63);
+    height: vw(68);
+    transform: rotate(150deg);
+  }
+
+  &__5 {
+    position: absolute;
+    left: 90vw;
+    top: 120px;
+    width: vw(172);
+    height: vw(172);
+    transform: rotate(-45deg);
+  }
+
+  &__6 {
+    position: absolute;
+    left: 2vw;
+    top: 35vh;
+    width: vw(87);
+    height: vw(87);
+    transform: rotate(150deg);
+  }
+
+  &__7 {
+    position: absolute;
+    left: 14vw;
+    top: 29vh;
+    width: vw(40);
+    height: vw(44);
+    transform: rotate(-165deg);
+  }
+
+  &__8 {
+    position: absolute;
+    left: 23vw;
+    top: 34vh;
+    width: vw(84);
+    height: vw(70);
+    transform: rotate(-60deg);
+  }
+
+  &__9 {
+    position: absolute;
+    left: 42vw;
+    top: 27vh;
+    width: vw(166);
+    height: vw(179);
+    transform: rotate(-120deg);
+  }
+
+  &__10 {
+    position: absolute;
+    left: 60vw;
+    top: 46vh;
+    width: vw(265);
+    height: vw(286);
+    transform: rotate(45deg);
+  }
+
+  &__11 {
+    position: absolute;
+    left: 87vw;
+    top: 65vh;
+    width: vw(70);
+    height: vw(58);
+    transform: rotate(135deg);
+
+    &--blue {
+      fill: var(--color-blue-bg);
+    }
+  }
+
+  &__12 {
+    position: absolute;
+    left: 50vw;
+    top: 88vh;
+    width: vw(95);
+    height: vw(95);
+    transform: rotate(150deg);
+  }
+
+  &__13 {
+    position: absolute;
+    left: 76vw;
+    top: 84vh;
+    width: vw(114);
+    height: vw(123);
+    transform: rotate(-30deg);
+  }
 }
