@@ -1,13 +1,14 @@
 .works {
-  padding-top: 190px;
+  padding-top: 130px;
 
   &__container {
     padding: 0;
   }
 
   &__dsr {
-    margin-left: 17.7vw;
-    max-width: 900px;
+    margin-bottom: 50px;
+    padding: 0 17.5vw;
+    max-width: 83vw;
     font-weight: 400;
     font-size: 32px;
     line-height: 40px;
@@ -16,8 +17,8 @@
 
   &__body {
     display: flex;
-    flex-wrap: wrap;
-    margin-top: 50px;
+    padding: 0 20px;
+    width: 100%;
   }
 
   &__contacts {
@@ -44,50 +45,54 @@
   }
 }
 
-.work {
-  overflow: hidden;
+.work-link {
+  width: 50%;
 
-  &__title {
-    position: absolute;
-    left: 20px;
-    top: 10px;
-    font-weight: 500;
-    font-size: vw(50);
-    line-height: vw(60);
+  &:first-child {
+    margin-right: 20px;
   }
 }
 
-.work-1 {
+.work {
+  overflow: hidden;
   width: 100%;
 
   &__title {
-    color: var(--color-white);
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: vw(50);
+    line-height: vw(60);
+    color: var(--color-black);
   }
 
-  &__picture {
-    overflow: hidden;
-    margin-bottom: -7px;
-    transition: transform 0.5s ease-in-out;
-
-    &:hover {
-      transform: scale(1.05);
-      transition: transform 0.5s ease-in-out;
-    }
+  &__dsr {
+    max-width: 90%;
   }
+}
+
+.work-3 {
+  margin-top: 115px;
+
+  &__picture {}
 
   &__rect {
-    fill: #353b3d;
+    fill: #ff794a;
+  }
+
+  &__circle {
+    fill: #9be55c;
   }
 
   &__path {
     fill: none;
-    stroke: #9be55c;
+    stroke: #fff;
+    stroke-linecap: round;
+    stroke-miterlimit: 10;
+    stroke-width: 25.87px;
     stroke-dasharray: 11000;
     stroke-dashoffset: 11000;
-    stroke-miterlimit: 10;
-    stroke-width: 6.29px;
-    animation: dash 15s infinite;
-    animation-fill-mode: forwards;
+    /* animation: dash 15s infinite;
+    animation-fill-mode: forwards; */
   }
 }
 
@@ -103,98 +108,50 @@
   }
 }
 
-.work-2 {
-  width: 100%;
-
-  &__title {
-    color: var(--color-black);
-  }
-
-  &__picture {
-    overflow: hidden;
-    margin-bottom: -7px;
-    transition: transform 0.5s ease-in-out;
-
-    &:hover {
-      transform: scale(1.05);
-      transition: transform 0.5s ease-in-out;
-    }
-  }
-
-  &__rect {
-    fill: #a7acb7;
-  }
-
-  &__cls-2 {
-    fill: url("#linear-gradient");
-  }
-
-  &__cls-3 {
-    fill: url("#linear-gradient-2");
-  }
-
-  &__cls-4 {
-    fill: url("#linear-gradient-3");
-  }
-
-  &__cls-5 {
-    fill: url("#linear-gradient-4");
-  }
-
-  &__cls-6 {
-    fill: url("#linear-gradient-5");
-  }
-
-  &__cls-7 {
-    fill: url("#linear-gradient-6");
-  }
-
-  &__cls-8 {
-    fill: var(--color-white);
-  }
-}
-
-.work-3 {
-  margin-top: 19px;
-  width: 100%;
-
-  &__title {
-    top: 25px;
-    color: var(--color-white);
-  }
-
-  &__picture {
-    overflow: hidden;
-    margin-bottom: -7px;
-    transition: transform 0.5s ease-in-out;
-
-    &:hover {
-      transform: scale(1.05);
-      transition: transform 0.5s ease-in-out;
-    }
-  }
-
-  &__rect {
-    fill: var(--color-blue);
-  }
-
-  &__path {
-    fill: var(--color-white);
-  }
-}
-
-.work-link {
-  position: relative;
-  width: 50%;
-
-  &:last-child {
-    width: 100%;
-  }
-}
-
 .works-footer {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
   padding: 60px 20px 50px;
 }
+
+
+/* &__picture {
+  overflow: hidden;
+  margin-bottom: -7px;
+  transition: transform 0.5s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+    transition: transform 0.5s ease-in-out;
+  }
+}
+
+&__rect {
+  fill: #353b3d;
+}
+
+&__path {
+  fill: none;
+  stroke: #9be55c;
+  stroke-dasharray: 11000;
+  stroke-dashoffset: 11000;
+  stroke-miterlimit: 10;
+  stroke-width: 6.29px;
+  animation: dash 15s infinite;
+  animation-fill-mode: forwards;
+}
+}
+
+@keyframes dash {
+from {
+  stroke-dashoffset: 11000;
+  transform: scale(1);
+}
+
+to {
+  stroke-dashoffset: 0;
+  transform: translate(-50%, -50%) scale(2);
+}
+}
+ */
