@@ -11,6 +11,7 @@
   }
 
   &__title {
+    z-index: 100;
     margin-bottom: 10px;
     font-weight: 500;
     font-size: vw(50);
@@ -37,6 +38,7 @@
 }
 
 .contact {
+  z-index: 100;
   font-weight: 700;
   line-height: vw(120);
   letter-spacing: -0.02em;
