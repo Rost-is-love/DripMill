@@ -73,32 +73,41 @@
 .work-3 {
   margin-top: 115px;
 
-  &__picture {}
-
   &__rect {
     fill: #ff794a;
   }
 
   &__circle {
     fill: #9be55c;
+    animation: circle 15s infinite;
+  }
+
+  @keyframes circle {
+    from {
+      transform: scale(1);
+    }
+
+    to {
+      transform: translate(-50%, -50%) scale(2);
+    }
   }
 
   &__path {
     fill: none;
     stroke: #fff;
+    stroke-dasharray: 15000;
+    stroke-dashoffset: 15000;
     stroke-linecap: round;
     stroke-miterlimit: 10;
     stroke-width: 25.87px;
-    stroke-dasharray: 11000;
-    stroke-dashoffset: 11000;
-    /* animation: dash 15s infinite;
-    animation-fill-mode: forwards; */
+    animation: dash 15s infinite;
+    animation-fill-mode: forwards;
   }
 }
 
 @keyframes dash {
   from {
-    stroke-dashoffset: 11000;
+    stroke-dashoffset: 15000;
     transform: scale(1);
   }
 
@@ -114,44 +123,3 @@
   justify-content: space-between;
   padding: 60px 20px 50px;
 }
-
-
-/* &__picture {
-  overflow: hidden;
-  margin-bottom: -7px;
-  transition: transform 0.5s ease-in-out;
-
-  &:hover {
-    transform: scale(1.05);
-    transition: transform 0.5s ease-in-out;
-  }
-}
-
-&__rect {
-  fill: #353b3d;
-}
-
-&__path {
-  fill: none;
-  stroke: #9be55c;
-  stroke-dasharray: 11000;
-  stroke-dashoffset: 11000;
-  stroke-miterlimit: 10;
-  stroke-width: 6.29px;
-  animation: dash 15s infinite;
-  animation-fill-mode: forwards;
-}
-}
-
-@keyframes dash {
-from {
-  stroke-dashoffset: 11000;
-  transform: scale(1);
-}
-
-to {
-  stroke-dashoffset: 0;
-  transform: translate(-50%, -50%) scale(2);
-}
-}
- */
