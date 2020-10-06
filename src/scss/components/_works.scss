@@ -82,16 +82,6 @@
     animation: circle 15s infinite;
   }
 
-  @keyframes circle {
-    from {
-      transform: scale(1);
-    }
-
-    to {
-      transform: translate(-50%, -50%) scale(2);
-    }
-  }
-
   &__path {
     fill: none;
     stroke: #fff;
@@ -102,6 +92,16 @@
     stroke-width: 25.87px;
     animation: dash 15s infinite;
     animation-fill-mode: forwards;
+  }
+}
+
+@keyframes circle {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: translate(-50%, -50%) scale(2);
   }
 }
 
