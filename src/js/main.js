@@ -1,7 +1,9 @@
 import './vendor/just-validate.min.js';
+import './functions/start-animation';
 import './_vars';
 import './functions/active-menu';
 import './functions/form';
+
 
 /* import {
   pageId
