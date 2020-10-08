@@ -1,0 +1,28 @@
+.footer {
+  padding-bottom: 8px;
+  padding-left: 16.5vw;
+
+  &__main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__excerpt {
+    margin-bottom: 7px;
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--color-gray);
+  }
+
+  &__order-link {
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+}
+
+.footer-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 0 20px;
+}

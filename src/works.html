@@ -24,7 +24,9 @@
           <div class="works__body works__first-body">
             <a href="greencup.html" class="work-link">
               <div class="work work-1">
-                <img src="img/Bitbullion-logo.jpg" alt="Логотип Bitbullion" class="work__img">
+                <div class="work__img-wrap">
+                  <img src="img/Bitbullion-logo.jpg" alt="Логотип Bitbullion" class="work__img">
+                </div>
                 <h3 class="work__title work-1__title">айдентика Bitbullion</h3>
                 <p class="work__dsr work-1__dsr">
                   Битбуллион&nbsp;&mdash; это сервис транзакций биткоина, создан
@@ -34,7 +36,9 @@
             </a>
             <a href="greencup.html" class="work-link">
               <div class="work work-2">
-                <img src="img/Birdie-logo.jpg" alt="Логотип Birdie" class="work__img">
+                <div class="work__img-wrap">
+                  <img src="img/Birdie-logo.jpg" alt="Логотип Birdie" class="work__img">
+                </div>
                 <h3 class="work__title work-2__title">логотип Birdie</h3>
               </div>
             </a>
@@ -49,21 +53,19 @@
                 <path class="work-3__path"
                   d="M839.34-147c-170.21,43.92-296,198.48-296,382.41,0,218.1,174.87,394.91,408.73,394.91,0,0,1.28-187.15,90.71-263.21,90.08-76.62,79.79-234.88-41-234.88-50,0-101.12,51.79-98.74,103.18s62.31,87.4,79.71,111.12c0,0,56.17-85.78,38.06-124.83-16.06-34.67-91.33-67.06-125.71-118C881.41,83.34,871.61,6.23,908.67-55.66c35.38-59.08,120.07-97.57,193.91-73.69C1275.92-63.18,1399,104.65,1399,301.24,1399,555.69,1192.76,762,938.31,762,647.5,762,411.76,526.22,411.76,235.42S647.5-291.13,938.31-291.13c327.15,0,592.36,265.21,592.36,592.37S1265.46,893.6,938.31,893.6c-363.51,0-658.19-294.68-658.19-658.18S574.8-422.77,938.31-422.77c399.85,0,724,324.15,724,724s-324.15,724-724,724c-436.21,0-789.83-353.62-789.83-789.82,0-395.17,281.44-722.55,690.86-780.66" />
               </svg>
+              <h3 class="work__title work-3__title">айдентика веганской кофейни GreenCup</h3>
+              <p class="work__dsr work-3__dsr">
+                точка рождает росток, своим развитием он&nbsp;тесно охватывает людей с&nbsp;общими идеями
+                и&nbsp;принципами.
+                в&nbsp;статичном&nbsp;логотипе&nbsp;мы&nbsp;видим кофейную пену в&nbsp;чашке,
+                а&nbsp;в&nbsp;центре можно распознать кофейное зерно.
+              </p>
             </div>
           </a>
         </div>
       </section>
     </main>
-    <footer class="footer">
-      <div class="container footer__container works-footer">
-        <div class="works__contacts">
-          <a href="order.html" class="order-link works__order-link">заполнить бриф</a>
-          <a href="tel:+79730987334" class="phone-number works__phone-number">+7 937 098 73 34</a>
-          <a href="mailto:hello@dripmill.com" class="email works__email">hello@dripmill.com</a>
-        </div>
-        @include('html/social.html')
-      </div>
-    </footer>
+    @include('html/footer.html')
   </div>
   <!-- @include('html/h1.html') пример инклуда -->
   <script src="js/main.js"></script>
