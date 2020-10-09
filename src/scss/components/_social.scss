@@ -1,4 +1,6 @@
 .media {
+  padding-top: 25px;
+
   &__item {
     display: flex;
     justify-content: flex-end;
@@ -10,11 +12,11 @@
     font-size: 32px;
     line-height: 40px;
     color: var(--color-black);
-    transition: color 0.3s ease-in-out;
+    transition: color 0.5s ease-in-out;
 
     &:hover {
-      color: var(--color-blue);
-      transition: color 0.3s ease-in-out;
+      color: var(--color-red);
+      transition: color 0.5s ease-in-out;
     }
   }
 }

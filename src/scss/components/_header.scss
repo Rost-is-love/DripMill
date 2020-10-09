@@ -39,12 +39,6 @@
   }
 
   &__item {
-    transition: transform 0.3s ease-in-out;
-
-    &:not(:last-child):hover {
-      transform: translateY(-3px);
-      transition: transform 0.3s ease-in-out;
-    }
 
     &:not(:first-child) {
       margin-left: 43px;
@@ -56,16 +50,23 @@
     font-weight: 500;
     font-size: 32px;
     color: var(--color-black);
+    transition: color 0.5s ease-in-out;
+
+    &:hover {
+      color: var(--color-red);
+      transition: color 0.5s ease-in-out;
+    }
 
     &--order {
       padding: 15px;
       color: var(--color-white);
       background-color: var(--color-blue);
-      transition: background-color 0.3s ease-in-out;
+      transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
 
       &:hover {
-        background-color: #ff4664;
-        transition: background-color 0.3s ease-in-out;
+        color: var(--color-black);
+        background-color: var(--color-red);
+        transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
       }
     }
   }
