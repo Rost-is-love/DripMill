@@ -1,19 +1,18 @@
 .order {
   display: flex;
   justify-content: flex-end;
-  padding-bottom: 50px;
+  padding-bottom: 15px;
 
   &__container {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    padding-top: 52px;
+    padding-top: 112px;
     width: 100%;
   }
 
   &__body {
-    margin-left: 185px;
-    padding-left: 7vw;
+    padding-left: 16.5vw;
   }
 
   &__title {
