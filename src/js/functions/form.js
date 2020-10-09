@@ -30,8 +30,8 @@ validateForms('.form', { email: {required: true, email: true}, tel: {required: t
 
 // textarea
 
-var tx = document.getElementsByTagName('textarea');
-for (var i = 0; i < tx.length; i++) {
+const tx = document.getElementsByTagName('textarea');
+for (let i = 0; i < tx.length; i++) {
   tx[i].setAttribute('style', 'height:' + (tx[i].scrollHeight) + 'px;overflow-y:hidden;');
   tx[i].addEventListener("input", OnInput, false);
 }
