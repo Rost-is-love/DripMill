@@ -1,6 +1,6 @@
 // Validation
 
-const thanks = document.querySelector('.form__thanks');
+const thanks = document.querySelector('.thanks-popup');
 
 let validateForms = function(selector, rules, successModal, yaGoal) {
   new window.JustValidate(selector, {
@@ -13,7 +13,7 @@ let validateForms = function(selector, rules, successModal, yaGoal) {
 			xhr.onreadystatechange = function() {
 				if (xhr.readyState === 4) {
 					if (xhr.status === 200) {
-            thanks.classList.add('form__thanks--open');
+            thanks.classList.add('thanks-popup-open');
 					}
 				}
 			};  

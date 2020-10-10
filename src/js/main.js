@@ -3,6 +3,7 @@ import './functions/start-animation';
 import './_vars';
 import './functions/active-menu';
 import './functions/form';
+import './functions/close-popup';
 
 
 /* import {

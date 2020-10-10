@@ -245,6 +245,7 @@ input::-moz-placeholder {
 .customer-phone {
 
   &__input {
+    line-height: 40px;
 
     &::-webkit-input-placeholder {
       font-weight: 400;
