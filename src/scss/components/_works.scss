@@ -101,12 +101,12 @@
   }
 
   &__circle {
-    fill: #9be55c;
+    fill: var(--color-green);
   }
 
   &__path {
     fill: none;
-    stroke: #fff;
+    stroke: var(--color-white);
     stroke-dasharray: 15000;
     stroke-dashoffset: 15000;
     stroke-linecap: round;

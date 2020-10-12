@@ -1,173 +1,122 @@
 .greencup {
-  margin-top: 50px;
 
   &__container {
-    padding: 0;
-    max-width: 1920px;
-  }
-
-  &__text {
-    margin-bottom: 55px;
-  }
-
-  &__title {
-    max-width: 40vw;
-  }
-
-  &__dsr {
-    margin-top: 20px;
-    max-width: 50vw;
-  }
-
-  &__sub-title {
-    margin: 45px 0 20px;
-  }
-
-  &__second-dsr {
-    max-width: 50vw;
-  }
-}
-
-.gallery {
-  margin: 0 auto;
-  max-width: 1920px;
-
-  &__img {
-    &:nth-child(2) {
-      margin-bottom: -7px;
-    }
-  }
-}
-
-.first-box {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-
-  &__item {
-    &--height {
-      grid-row: span 2;
-    }
-  }
-
-  &__img {
-    margin-bottom: -7px;
-  }
-}
-
-.second-box {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-
-  &__item {
-    &--text {
-      padding: vw(100) 0 0 20px;
-    }
-  }
-
-  &__img {
-    margin-bottom: -7px;
-  }
-
-  &__slogan {
-    font-weight: 700;
-    font-size: vw(150);
-    line-height: vw(120);
-    color: #9be55c;
-  }
-}
-
-@media (min-width: 1920px) {
-  .second-box__item--text {
-    padding: 100px 0 0 20px;
-  }
-
-  .second-box__slogan {
-    font-size: 150px;
-    line-height: 120px;
+    padding-top: 117px;
   }
 }
 
 .work-title {
+  margin-bottom: 13px;
+  margin-left: 17.5vw;
   font-weight: 500;
-  font-size: vw(50);
-  line-height: vw(60);
-  color: var(--color-black);
-}
-
-.work-dsr {
-  font-weight: 400;
-  font-size: vw(32);
-  line-height: vw(40);
-  color: var(--color-black);
-}
-
-.wrapper-text {
-  display: flex;
-  justify-content: center;
-  width: 100%;
+  font-size: 50px;
 }
 
 .work-text {
-  margin-right: 280px;
+  margin-bottom: 55px;
+  margin-left: 17.5vw;
+  max-width: 930px;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 40px;
 }
 
-.work-img-1 {
+.greencup-animation {
+
+  &__rect {
+    fill: #ff794a;
+  }
+
+  &__circle {
+    fill: var(--color-green);
+    animation: circle 15s infinite;
+  }
+
+  &__path {
+    fill: none;
+    stroke: var(--color-white);
+    stroke-dasharray: 15000;
+    stroke-dashoffset: 15000;
+    stroke-linecap: round;
+    stroke-miterlimit: 10;
+    stroke-width: 25.87px;
+    animation: dash-green 15s infinite;
+    animation-fill-mode: forwards;
+  }
+}
+
+@keyframes dash-green {
+  from {
+    stroke-dashoffset: 15000;
+    transform: translate(0, 240px) scale(1);
+  }
+
+  to {
+    stroke-dashoffset: 0;
+    transform: translate(-50%, 0) scale(2);
+  }
+}
+
+.work-second-title {
+  margin-top: 25px;
+}
+
+.work-second-text {
+  margin-bottom: 0;
+}
+
+.work-pictures {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 115px;
   width: 100%;
-  height: vw(740);
-  background-color: #353b3d;
 }
 
-.sub-title {
-  font-weight: 500;
-  font-size: 50px;
-  color: var(--color-black);
+.work-img {
+  width: 100%;
 }
 
-.footer-work {
-  padding: 50px 0 45px;
+.work-solgan {
+  margin: 20px 30px 100px 180px;
+  max-width: 70vw;
+  font-weight: 700;
+  font-size: vw(120);
+  line-height: vw(120);
+  color: var(--color-green);
+}
 
-  &__container {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
+.work-authors {
+  display: flex;
+  margin-bottom: 115px;
+  padding-top: 42px;
+  padding-left: 20px;
+}
+
+.designer {
+  margin-right: 22px;
+
+  &__title {
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 20px;
   }
 
-  &__left {
-    display: flex;
-    justify-content: flex-start;
-  }
-
-  &__text {
-    margin-left: 60px;
+  &__name {
+    font-weight: 400;
+    font-size: 20px;
   }
 }
 
-.designer-name {
-  max-width: 260px;
-  font-weight: 400;
-  font-size: 32px;
-  line-height: 40px;
-  color: var(--color-black);
-}
+.copywriter {
 
-.copywriter-name {
-  margin-bottom: 40px;
-  max-width: 260px;
-  font-weight: 400;
-  font-size: 32px;
-  line-height: 40px;
-  color: var(--color-black);
-}
+  &__title {
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 20px;
+  }
 
-.to-behace {
-  font-weight: 500;
-  font-size: 50px;
-  line-height: 60px;
-  color: var(--color-black);
-  transition: color 0.3s ease-in-out;
-
-  &:hover {
-    color: var(--color-blue);
-    transition: color 0.3s ease-in-out;
+  &__name {
+    font-weight: 400;
+    font-size: 20px;
   }
 }
