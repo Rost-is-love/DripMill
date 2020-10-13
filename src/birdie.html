@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+  <link rel="stylesheet" href="css/main.min.css">
+  <title>Birdie</title>
+</head>
+
+<body>
+  <div class="site-container">
+    @include('html/header.html')
+    <main class="main">
+      <section class="birdie">
+        <div class="work-container birdie__container">
+          <h1 class="work-title birdie__title">логотип английского онлайн&nbsp;журнала о&nbsp;гольфе Birdie</h1>
+          <p class="work-text birdie__text">
+            бунтарски сочный, современный, трендовый и&nbsp;задиристый. просто представь как ты&nbsp;берешь в&nbsp;руки журнал с&nbsp;этим логотипом. наверняка уже захотели пойти на&nbsp;грин и&nbsp;въебать свой первый хук?
+          </p>
+          <p class="work-text birdie__text">
+            логотип отображает путь гольфиста.&nbsp;он&nbsp;победоносно шествует и&nbsp;сдирает флаги с&nbsp;покоренных лунок. ему нужно захватить все, чтобы стать лучшим.
+          </p>
+          <div class="work-pictures birdie__pictures">
+            <img src="img/birdie-1.jpg" alt="Логотип Birdie" class="work-img birdie__img">
+            <img src="img/birdie-2.jpg" alt="Мужчина играет в гольф" class="work-img birdie__img">
+            <img src="img/birdie-3.jpg" alt="Айденткиа Birdie" class="work-img birdie__img">
+            <img src="img/birdie-4.jpg" alt="Футболка Birdie" class="work-img birdie__img">
+            <img src="img/birdie-5.jpg" alt="Журанл Birdie" class="work-img birdie__img">
+            <img src="img/birdie-6.jpg" alt="Флаг Birdie" class="work-img birdie__img">
+          </div>
+          <div class="work-authors birdie__authors">
+            <div class="designer">
+              <span class="designer__title">дизайнер</span>
+              <span class="designer__name birdie__designer-name">Марк Ломакин</span>
+            </div>
+            <div class="copywriter">
+              <span class="copywriter__title">копирайтер</span>
+              <span class="copywriter__name birdie__copywriter-name">Фёдор Киселёв</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    @include('html/footer.html')
+  </div>
+  <!-- @include('html/h1.html') пример инклуда -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
