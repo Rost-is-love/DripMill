@@ -17,6 +17,7 @@
 
   &__body {
     display: flex;
+    justify-content: space-between;
     padding: 0 20px;
     width: 100%;
   }
@@ -89,6 +90,7 @@
   &__img-wrap {
     display: inline-block;
     overflow: hidden;
+    width: 100%;
   }
 }
 
