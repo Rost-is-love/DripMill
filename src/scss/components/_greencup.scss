@@ -1,8 +1,11 @@
 .greencup {
-
-  &__container {
-    padding-top: 117px;
+  &__text {
+    margin-bottom: 55px;
   }
+}
+
+.work-container {
+  padding-top: 117px;
 }
 
 .work-title {
@@ -13,7 +16,6 @@
 }
 
 .work-text {
-  margin-bottom: 55px;
   margin-left: 17.5vw;
   max-width: 930px;
   font-weight: 400;
