@@ -61,17 +61,21 @@
       padding: 15px;
       color: var(--color-white);
       background-color: var(--color-blue);
-      transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+      transition: background-color 0.5s ease-in-out;
 
       &:hover {
-        color: var(--color-black);
+        color: var(--color-white);
         background-color: var(--color-red);
-        transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+        transition: background-color 0.5s ease-in-out;
       }
     }
   }
 }
 
 .active-menu {
+  color: var(--color-gray);
+}
+
+.nav__link.active-menu:hover {
   color: var(--color-gray);
 }
