@@ -86,10 +86,10 @@
   <div class="budget form__item">
     <span class="form-title budget__title">бюджет</span>
     <div class="budget__items">
-      <label class="budget__label"><input type="radio" name="Бюджет" value="До 50 000 Р." class="budget__input"><span class="budget__item budget__item--min"></span></label>
-      <label class="budget__label"><input type="radio" name="Бюджет" value="До 100 000 Р." class="budget__input"><span class="budget__item budget__item--mid"></span></label>
-      <label class="budget__label"><input type="radio" name="Бюджет" value="До 300 000 Р." class="budget__input"><span class="budget__item budget__item--max"></span></label>
-      <label class="budget__label"><input type="radio" name="Бюджет" value="Похуй" class="budget__input"><span class="budget__item budget__item--other"></span></label>
+      <label class="budget__label"><input type="radio" onclick="clickRadio(this)" name="Бюджет" value="До 50 000 Р." class="budget__input"><span class="budget__item budget__item--min"></span></label>
+      <label class="budget__label"><input type="radio" onclick="clickRadio(this)" name="Бюджет" value="До 100 000 Р." class="budget__input"><span class="budget__item budget__item--mid"></span></label>
+      <label class="budget__label"><input type="radio" onclick="clickRadio(this)" name="Бюджет" value="До 300 000 Р." class="budget__input"><span class="budget__item budget__item--max"></span></label>
+      <label class="budget__label"><input type="radio" onclick="clickRadio(this)" name="Бюджет" value="Похуй" class="budget__input"><span class="budget__item budget__item--other"></span></label>
     </div>
   </div>
   <div class="customer-name form__item">
@@ -110,6 +110,18 @@
     Нажимая кнопку &laquo;Отправить заявку&raquo; вы&nbsp;даёте свое согласие на&nbsp;обработку персональных данных
   </span>
 </form>
+<script>
+const clickRadio = (el) => {
+  let siblings = document.querySelectorAll("input[type='radio'][name='" + el.name + "']");
+  for (var i = 0; i < siblings.length; i += 1) {
+    if (siblings[i] != el)
+      siblings[i].oldChecked = false;
+  }
+  if (el.oldChecked)
+    el.checked = false;
+  el.oldChecked = el.checked;
+};
+</script>
           </div>
           <ul class="media contacts__media">
   <li class="media__item"><a href="https://www.facebook.com/" class="media__link" target="_blank">facebook</a></li>
