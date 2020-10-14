@@ -28,12 +28,12 @@
 .order-link {
   font-size: vw(120);
   color: var(--color-blue);
-  transition: color 0.5s ease-in-out;
+  transition: color 0.3s ease-in-out;
   cursor: pointer;
 
   &:hover {
     color: var(--color-red);
-    transition: color 0.5s ease-in-out;
+    transition: color 0.3s ease-in-out;
   }
 }
 

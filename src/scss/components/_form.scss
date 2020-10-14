@@ -28,11 +28,11 @@
     height: 64px;
     color: var(--color-white);
     background-color: var(--color-blue);
-    transition: background-color 0.5s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
 
     &:hover {
       background-color: var(--color-red);
-      transition: background-color 0.5s ease-in-out;
+      transition: background-color 0.3s ease-in-out;
     }
   }
 
