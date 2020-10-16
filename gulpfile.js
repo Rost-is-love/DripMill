@@ -28,6 +28,7 @@ const rev = require('gulp-rev');
 const revRewrite = require('gulp-rev-rewrite');
 const revdel = require('gulp-rev-delete-original');
 const htmlmin = require('gulp-htmlmin');
+const imagemin = require("gulp-imagemin");
 
 // DEV
 //svg sprite
@@ -50,6 +51,14 @@ const resources = () => {
 
 const imgToApp = () => {
   return src(['./src/img/**.jpg', './src/img/**.png', './src/img/**.jpeg', './src/img/*.svg'])
+    .pipe(
+			imagemin({
+				progressive: true,
+				svgoPlugins: [{ removeViewBox: false }],
+				interlaced: true,
+				optimizationLevel: 3 // 0 to 7
+			})
+    )
     .pipe(dest('./app/img'))
 }
 
