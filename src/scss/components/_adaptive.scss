@@ -1,0 +1,67 @@
+@include desktop {
+  .first {
+    &__title {
+      margin-bottom: 50px;
+      max-width: 70%;
+      font-size: vw2(60);
+      line-height: vw2(60);
+
+      &--blue {
+        margin: 0;
+      }
+    }
+  }
+}
+
+@include tablet {
+  .logo {
+    width: 80px;
+    height: 82px;
+  }
+
+  .nav {
+    &__list {
+      padding-top: 0;
+    }
+
+    &__item {
+      &:not(:first-child) {
+        margin-left: 23px;
+      }
+    }
+
+    &__link {
+      font-size: 20px;
+    }
+  }
+
+  .first {
+    background-size: 72%;
+  }
+
+  .media {
+    padding-top: 25px;
+    padding-bottom: 7px;
+
+    &__item {
+      padding-bottom: 28px;
+    }
+
+    &__item:nth-child(4) {
+      padding-bottom: 0;
+    }
+
+    &__link {
+      font-size: 20px;
+      line-height: 20px;
+    }
+  }
+
+  .copyright {
+    margin-top: 35px;
+
+    &__text {
+      font-size: 12px;
+    }
+  }
+}

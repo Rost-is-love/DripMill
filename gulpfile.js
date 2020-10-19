@@ -56,7 +56,7 @@ const imgToApp = () => {
 				progressive: true,
 				svgoPlugins: [{ removeViewBox: false }],
 				interlaced: true,
-				optimizationLevel: 3 // 0 to 7
+				optimizationLevel: 2 // 0 to 7
 			})
     )
     .pipe(dest('./app/img'))
