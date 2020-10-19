@@ -1,4 +1,4 @@
-function clickRadio(el) {
+/* function clickRadio(el) {
   var siblings = document.querySelectorAll("input[type='radio'][name='" + el.name + "']");
   for (var i = 0; i < siblings.length; i++) {
     if (siblings[i] != el)
@@ -7,13 +7,13 @@ function clickRadio(el) {
   if (el.oldChecked)
     el.checked = false;
   el.oldChecked = el.checked;
-}
+} */
 
 // Validation
 
 const thanks = document.querySelector('.thanks-popup');
 
-let validateForms = function(selector, rules, successModal, yaGoal) {
+const validateForms = (selector, rules, successModal, yaGoal) => {
   new window.JustValidate(selector, {
 		rules: rules,
 		submitHandler: function(form) {
@@ -37,7 +37,7 @@ let validateForms = function(selector, rules, successModal, yaGoal) {
   });
 };
 
-validateForms('.form', { email: {required: true, email: true}, tel: {required: true} }, '.thanks-popup', 'send goal');
+validateForms('.form', { email: {required: true, email: true}, tel: {required: true} }, '.thanks-popup-open', 'send goal');
 
 // textarea
 
