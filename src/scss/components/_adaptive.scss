@@ -82,6 +82,14 @@
       font-size: 18px;
     }
   }
+
+  .first {
+    &__title {
+      max-width: 75%;
+      font-size: vw2(73);
+      line-height: vw2(73);
+    }
+  }
 }
 
 @include mobile {
@@ -143,7 +151,24 @@
     display: block;
   }
 
+  .first {
+    background-image: none;
+    background-color: var(--color-white);
+
+    &__title {
+      margin-bottom: 6px;
+      max-width: 100%;
+      font-size: vwm(30);
+      line-height: vwm(36);
+
+      &--blue {
+        margin: 0;
+      }
+    }
+  }
+
   .media {
+    display: none;
     opacity: 0;
     visibility: hidden;
 

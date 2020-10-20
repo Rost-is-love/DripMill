@@ -1,9 +1,9 @@
 import './vendor/just-validate.min.js';
 import './functions/start-animation';
 import './_vars';
-import './functions/form';
-import './functions/menu-work';
 import './functions/active-menu';
+import './functions/menu-work';
+import './functions/form';
 import './functions/close-popup';
 
 
