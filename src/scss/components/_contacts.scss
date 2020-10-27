@@ -53,6 +53,31 @@
   font-size: vw(120);
 }
 
+.mobile-media {
+  display: none;
+  margin-top: 25px;
+  opacity: 0;
+
+  &__item {
+    margin-bottom: vwm(14);
+    line-height: vwm(18);
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: vwm(17);
+    letter-spacing: 0.03em;
+    color: var(--color-gray);
+  }
+
+  &__link {
+    font-weight: 400;
+    font-size: vwm(18);
+    line-height: vwm(18);
+    color: var(--color-black);
+  }
+}
+
 .contacts-bg-img {
   z-index: 0;
   fill: var(--color-gray-bg);

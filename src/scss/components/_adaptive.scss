@@ -423,6 +423,50 @@
     opacity: 1;
   }
 
+  .contacts {
+    &__container {
+      padding-top: 105px;
+      padding-bottom: 18px;
+    }
+
+    &__main {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+    }
+
+    &__title {
+      margin-bottom: 2px;
+      font-size: vwm(18);
+    }
+
+    &__info {
+      margin-bottom: 0;
+    }
+  }
+
+  .contact {
+    line-height: vwm(36);
+  }
+
+  .phone-number {
+    font-size: vwm(26);
+  }
+
+  .email {
+    font-size: vwm(30);
+  }
+
+  .order-link {
+    margin-top: 17vh;
+    font-size: vwm(30);
+  }
+
+  .mobile-media {
+    display: block;
+    opacity: 1;
+  }
+
   .contacts-bg {
     display: none;
     opacity: 0;
