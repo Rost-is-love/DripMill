@@ -53,6 +53,42 @@
       line-height: 32px;
     }
   }
+
+  .work-title {
+    margin-right: 14vw;
+    margin-bottom: 22px;
+    font-size: 36px;
+  }
+
+  .work-text {
+    margin-right: 14vw;
+    max-width: 480px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .greencup {
+    &__text {
+      margin-bottom: 65px;
+    }
+  }
+
+  .work-second-text {
+    margin-bottom: 0;
+  }
+
+  .work-pictures {
+    margin-top: 90px;
+  }
+
+  .work-solgan {
+    margin: 50px 30px 47px 14vw;
+    max-width: 620px;
+    font-size: 60px;
+    line-height: 60px;
+    letter-spacing: -0.02em;
+  }
 }
 
 @include tablet {
@@ -285,6 +321,51 @@
       font-size: 20px;
     }
   }
+
+  .work-container {
+    padding-top: 110px;
+  }
+
+  .work-title {
+    margin-left: 14vw;
+  }
+
+  .work-text {
+    margin-left: 14vw;
+  }
+
+  .work-pictures {
+    margin-top: 90px;
+  }
+
+  .work-authors {
+    margin-bottom: 50px;
+    padding-top: 30px;
+  }
+
+  .designer {
+    margin-right: 42px;
+
+    &__title {
+      margin-bottom: 10px;
+      font-size: 12px;
+    }
+
+    &__name {
+      font-size: 12px;
+    }
+  }
+
+  .copywriter {
+    &__title {
+      margin-bottom: 10px;
+      font-size: 12px;
+    }
+
+    &__name {
+      font-size: 12px;
+    }
+  }
 }
 
 @include tablet-small {
@@ -394,6 +475,42 @@
     &__dsr {
       padding-right: 20px;
     }
+  }
+
+  .work-title {
+    margin-right: 105px;
+    margin-bottom: 15px;
+    margin-left: 105px;
+    font-size: 32px;
+  }
+
+  .work-text {
+    margin-right: 70px;
+    margin-left: 105px;
+    max-width: 440px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .greencup {
+    &__text {
+      margin-bottom: 40px;
+    }
+  }
+
+  .work-second-text {
+    margin-bottom: 0;
+  }
+
+  .work-pictures {
+    margin-top: 70px;
+  }
+
+  .work-solgan {
+    margin: 30px 20px 30px 105px;
+    max-width: 400px;
+    font-size: 40px;
+    line-height: 40px;
   }
 
   .footer {
@@ -634,6 +751,69 @@
     &__picture-mob {
       display: block;
       opacity: 1;
+    }
+  }
+
+  .work-container {
+    padding-top: 70px;
+  }
+
+  .work-title {
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 0 15px;
+    font-size: vwm(24);
+    line-height: vwm(36);
+    letter-spacing: -0.02em;
+  }
+
+  .work-text {
+    margin: 0;
+    padding: 0 15px;
+    max-width: 100%;
+    font-size: vwm(18);
+    line-height: vwm(24);
+  }
+
+  .greencup {
+    &__text {
+      margin-bottom: 28px;
+    }
+  }
+
+  .work-second-text {
+    margin-bottom: 0;
+  }
+
+  .work-pictures {
+    margin-top: 40px;
+  }
+
+  .work-solgan {
+    margin: 10px 0 30px;
+    padding: 0 15px;
+    max-width: 100%;
+    font-size: vwm(30);
+    line-height: vwm(36);
+  }
+
+  .work-authors {
+    margin-bottom: 30px;
+    padding-top: 12px;
+    padding-left: 15px;
+  }
+
+  .designer {
+    margin-right: 70px;
+
+    &__title {
+      margin-bottom: 2px;
+    }
+  }
+
+  .copywriter {
+    &__title {
+      margin-bottom: 2px;
     }
   }
 
