@@ -89,6 +89,38 @@
     line-height: 60px;
     letter-spacing: -0.02em;
   }
+
+  .bitbullion {
+    &__title {
+      margin-top: -15px;
+      margin-bottom: 10px;
+      max-width: 650px;
+    }
+
+    &__text {
+      max-width: 520px;
+
+      &:nth-child(4) {
+        max-width: 520px;
+      }
+
+      &:nth-child(5) {
+        max-width: 530px;
+      }
+    }
+
+    &__img {
+      &:first-child {
+        margin: 12.5vw 14vw 19vw;
+      }
+    }
+  }
+
+  .birdie {
+    &__title {
+      margin-bottom: 5px;
+    }
+  }
 }
 
 @include tablet {
@@ -341,6 +373,12 @@
   .work-authors {
     margin-bottom: 50px;
     padding-top: 30px;
+  }
+
+  .birdie {
+    &__pictures {
+      margin-top: 65px;
+    }
   }
 
   .designer {
@@ -814,6 +852,44 @@
   .copywriter {
     &__title {
       margin-bottom: 2px;
+    }
+  }
+
+  .bitbullion {
+    &__title {
+      margin-top: 0;
+      max-width: 100%;
+    }
+
+    &__text {
+      max-width: 100%;
+
+      &:nth-child(4) {
+        max-width: 100%;
+      }
+
+      &:nth-child(5) {
+        max-width: 100%;
+      }
+    }
+
+    &__img {
+      &:first-child {
+        margin: 0;
+        margin-bottom: 60px;
+        max-width: 72%;
+      }
+    }
+  }
+
+  .birdie {
+    &__text {
+      max-width: 90%;
+      letter-spacing: 0.04em;
+    }
+
+    &__pictures {
+      margin-top: 30px;
     }
   }
 
