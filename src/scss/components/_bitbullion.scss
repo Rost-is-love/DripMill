@@ -1,7 +1,3 @@
-.work-container {
-  padding-top: 117px;
-}
-
 .bitbullion {
   &__title {
     max-width: 750px;
@@ -20,9 +16,14 @@
     }
   }
 
+  &__pictures {
+    justify-content: center;
+  }
+
   &__img {
     &:first-child {
-      margin: 12vw 17.5vw 23vw;
+      margin: 12vw 0 23vw;
+      max-width: 65%;
     }
   }
 }

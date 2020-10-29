@@ -5,14 +5,15 @@
 }
 
 .work-container {
-  padding-top: 117px;
+  padding-top: 110px;
 }
 
 .work-title {
-  margin-bottom: 13px;
+  margin-bottom: 15px;
   margin-left: 17.5vw;
   font-weight: 500;
   font-size: 50px;
+  line-height: 60px;
 }
 
 .work-text {
@@ -70,7 +71,6 @@
 .work-pictures {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   margin-top: 115px;
   width: 100%;
 }
