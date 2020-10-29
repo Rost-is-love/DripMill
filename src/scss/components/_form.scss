@@ -1,5 +1,3 @@
-@import "../mixins";
-
 .form {
   padding-top: 42px;
   padding-bottom: 70px;
@@ -151,18 +149,11 @@
 }
 
 .budget {
-  display: flex;
-  justify-content: flex-start;
-
-  &__title {
-    width: 160px;
-  }
-
   &__items {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     padding-bottom: 8px;
-    width: 465px;
+    width: 600px;
   }
 
   &__label:not(:last-child) {

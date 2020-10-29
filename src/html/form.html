@@ -13,7 +13,7 @@
     <label class="company__label"><input type="text" name="Компания" value="" class="form-input company__input"></label>
   </div>
   <div class="task form__item">
-    <span class="form-title task__title">задача и сроки</span>
+    <span class="form-title task__title">задача и&nbsp;сроки</span>
     <textarea name="Задача и сроки" class="textarea"></textarea>
   </div>
   <div class="budget form__item">
@@ -46,7 +46,7 @@
 <script>
 const clickRadio = (el) => {
   let siblings = document.querySelectorAll("input[type='radio'][name='" + el.name + "']");
-  for (var i = 0; i < siblings.length; i += 1) {
+  for (let i = 0; i < siblings.length; i += 1) {
     if (siblings[i] != el)
       siblings[i].oldChecked = false;
   }
