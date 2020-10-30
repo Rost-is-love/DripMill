@@ -1,7 +1,7 @@
 .form {
   padding-top: 42px;
   padding-bottom: 70px;
-  max-width: 760px;
+  width: 760px;
 
   &__item {
     display: flex;
@@ -54,6 +54,76 @@
   border: 1px solid var(--color-gray);
   width: 600px;
   height: 36px;
+
+  line-height: 40px;
+
+  &::-webkit-input-placeholder {
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--color-gray);
+    text-indent: 0px;
+    -webkit-transition: text-indent 0.3s ease;
+    transition: text-indent 0.3s ease;
+  }
+
+  &::-moz-placeholder {
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--color-gray);
+    text-indent: 0px;
+    -moz-transition: text-indent 0.3s ease;
+    transition: text-indent 0.3s ease;
+  }
+
+  &:-moz-placeholder {
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--color-gray);
+    text-indent: 0px;
+    -moz-transition: text-indent 0.3s ease;
+    transition: text-indent 0.3s ease;
+  }
+
+  &:-ms-input-placeholder {
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--color-gray);
+    text-indent: 0px;
+    -ms-transition: text-indent 0.3s ease;
+    transition: text-indent 0.3s ease;
+  }
+
+  &:focus::-webkit-input-placeholder {
+    font-weight: 400;
+    font-size: 20px;
+    text-indent: 600px;
+    -webkit-transition: text-indent 0.3s ease;
+    transition: text-indent 0.3s ease;
+  }
+
+  &:focus::-moz-placeholder {
+    font-weight: 400;
+    font-size: 20px;
+    text-indent: 600px;
+    -moz-transition: text-indent 0.3s ease;
+    transition: text-indent 0.3s ease;
+  }
+
+  &:focus:-moz-placeholder {
+    font-weight: 400;
+    font-size: 20px;
+    text-indent: 600px;
+    -moz-transition: text-indent 0.3s ease;
+    transition: text-indent 0.3s ease;
+  }
+
+  &:focus:-ms-input-placeholder {
+    font-weight: 400;
+    font-size: 20px;
+    text-indent: 600px;
+    -ms-transition: text-indent 0.3s ease;
+    transition: text-indent 0.3s ease;
+  }
 }
 
 .textarea {
@@ -64,6 +134,37 @@
   width: 600px;
   height: 90px;
   resize: none;
+
+  @include placeholder {
+    opacity: 0;
+  }
+}
+
+.company__input {
+  @include placeholder {
+    opacity: 0;
+  }
+}
+
+.customer-name__input {
+  @include placeholder {
+    opacity: 0;
+  }
+}
+
+.customer-email__input {
+  @include placeholder {
+    opacity: 0;
+  }
+}
+
+input.customer-phone__input--small {
+  display: none;
+
+  @include placeholder {
+    padding-left: 0;
+    opacity: 0;
+  }
 }
 
 .project {
@@ -231,79 +332,4 @@ input::-webkit-input-placeholder {
 input::-moz-placeholder {
   padding-left: 10px;
   color: var(--color-gray);
-}
-
-.customer-phone {
-
-  &__input {
-    line-height: 40px;
-
-    &::-webkit-input-placeholder {
-      font-weight: 400;
-      font-size: 20px;
-      color: var(--color-gray);
-      text-indent: 0px;
-      -webkit-transition: text-indent 0.3s ease;
-      transition: text-indent 0.3s ease;
-    }
-
-    &::-moz-placeholder {
-      font-weight: 400;
-      font-size: 20px;
-      color: var(--color-gray);
-      text-indent: 0px;
-      -moz-transition: text-indent 0.3s ease;
-      transition: text-indent 0.3s ease;
-    }
-
-    &:-moz-placeholder {
-      font-weight: 400;
-      font-size: 20px;
-      color: var(--color-gray);
-      text-indent: 0px;
-      -moz-transition: text-indent 0.3s ease;
-      transition: text-indent 0.3s ease;
-    }
-
-    &:-ms-input-placeholder {
-      font-weight: 400;
-      font-size: 20px;
-      color: var(--color-gray);
-      text-indent: 0px;
-      -ms-transition: text-indent 0.3s ease;
-      transition: text-indent 0.3s ease;
-    }
-
-    &:focus::-webkit-input-placeholder {
-      font-weight: 400;
-      font-size: 20px;
-      text-indent: 600px;
-      -webkit-transition: text-indent 0.3s ease;
-      transition: text-indent 0.3s ease;
-    }
-
-    &:focus::-moz-placeholder {
-      font-weight: 400;
-      font-size: 20px;
-      text-indent: 600px;
-      -moz-transition: text-indent 0.3s ease;
-      transition: text-indent 0.3s ease;
-    }
-
-    &:focus:-moz-placeholder {
-      font-weight: 400;
-      font-size: 20px;
-      text-indent: 600px;
-      -moz-transition: text-indent 0.3s ease;
-      transition: text-indent 0.3s ease;
-    }
-
-    &:focus:-ms-input-placeholder {
-      font-weight: 400;
-      font-size: 20px;
-      text-indent: 600px;
-      -ms-transition: text-indent 0.3s ease;
-      transition: text-indent 0.3s ease;
-    }
-  }
 }

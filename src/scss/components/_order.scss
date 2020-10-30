@@ -5,17 +5,19 @@
 
   &__container {
     display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
+    flex-direction: column;
     padding-top: 112px;
     width: 100%;
   }
 
   &__body {
+    display: flex;
+    justify-content: space-between;
     padding-left: 16.5vw;
   }
 
   &__title {
+    margin-left: 16.5vw;
     max-width: 550px;
     font-weight: 500;
     font-size: 50px;
@@ -25,10 +27,15 @@
 
   &__dsr {
     margin-top: 15px;
+    margin-left: 16.5vw;
     max-width: 900px;
     font-weight: 400;
     font-size: 32px;
     line-height: 40px;
     color: var(--color-black);
+  }
+
+  &__media {
+    align-self: flex-end;
   }
 }

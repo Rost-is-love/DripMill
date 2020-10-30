@@ -15,7 +15,7 @@
     <header class="header order__header">
       <div class="container header__container">
         <a href="index.html" class="logo order__logo" aria-label="Логотип">
-          <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 105 107.45">
+          <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 105 107.45">
             <title>logo</title>
             <g>
               <path class="cls-1" d="M483,401.84l-12.51-26.63,5.64-2.65,10.32,22,10.09-4.74,2.18,4.64Z"
@@ -59,12 +59,12 @@
       <section class="order">
         <h2 class="visually-hidden menu-close menu-open-btn" data-id-nav="order">Заказать дизайн</h2>
         <div class="container order__container">
+          <h3 class="order__title">для начала нам нужно обсудить проект</h3>
+          <span class="order__dsr">
+            можно написать на&nbsp;почту, в&nbsp;любую социальную сеть, позвонить по&nbsp;номеру +7&nbsp;937&nbsp;098
+            73 34&nbsp;или коротко рассказать о&nbsp;проекте в&nbsp;этой форме.
+          </span>
           <div class="order__body">
-            <h3 class="order__title">для начала нам нужно обсудить проект</h3>
-            <span class="order__dsr">
-              можно написать на&nbsp;почту, в&nbsp;любую социальную сеть, позвонить по&nbsp;номеру +7&nbsp;937&nbsp;098
-              73 34&nbsp;или коротко рассказать о&nbsp;проекте в&nbsp;этой форме.
-            </span>
             <form action="" method="POST" class="form">
   <div class="project form__item">
     <span class="form-title project__title">проект</span>
@@ -77,11 +77,11 @@
   </div>
   <div class="company form__item">
     <span class="form-title company__title">компания</span>
-    <label class="company__label"><input type="text" name="Компания" value="" class="form-input company__input"></label>
+    <label class="form-label company__label"><input type="text" name="Компания" placeholder="компания" value="" class="form-input company__input"></label>
   </div>
   <div class="task form__item">
     <span class="form-title task__title">задача и&nbsp;сроки</span>
-    <textarea name="Задача и сроки" class="textarea"></textarea>
+    <textarea name="Задача и сроки" placeholder="задача и сроки" class="textarea"></textarea>
   </div>
   <div class="budget form__item">
     <span class="form-title budget__title">бюджет</span>
@@ -94,15 +94,18 @@
   </div>
   <div class="customer-name form__item">
     <span class="form-title customer-name__title">имя</span>
-    <label class="customer-name__label"><input type="text" name="Имя клиента" value="" class="form-input customer-name__input"></label>
+    <label class="form-label customer-name__label"><input type="text" placeholder="имя" name="Имя клиента" value="" class="form-input customer-name__input"></label>
   </div>
   <div class="customer-phone form__item">
     <span class="form-title customer-phone__title">телефон</span>
-    <label class="customer-phone__label"><input type="tel" data-validate-field="tel" placeholder="или мессенджер" name="Телефон" value="" class="form-input customer-phone__input"></label>
+    <label class="form-label customer-phone__label">
+      <input type="tel" data-validate-field="tel" placeholder="или мессенджер" name="Телефон" value="" class="form-input customer-phone__input customer-phone__input--large">
+      <input type="tel" data-validate-field="tel" placeholder="телефон" name="Телефон" value="" class="form-input customer-phone__input customer-phone__input--small">
+    </label>
   </div>
   <div class="customer-email form__item">
     <span class="form-title customer-email__title">почта</span>
-    <label class="customer-email__label"><input type="email" data-validate-field="email" name="Почта" value="" class="form-input customer-email__input"></label>
+    <label class="form-label customer-email__label"><input type="email" data-validate-field="email" placeholder="почта" name="Почта" value="" class="form-input customer-email__input"></label>
   </div>
 
   <button type="submit" class="form__btn">отправить заявку</button>
@@ -122,14 +125,14 @@ const clickRadio = (el) => {
   el.oldChecked = el.checked;
 };
 </script>
+            <ul class="media order__media">
+              <li class="media__item"><a href="https://www.facebook.com/" class="media__link" target="_blank">facebook</a></li>
+              <li class="media__item"><a href="https://www.behance.net/" class="media__link" target="_blank">behance</a></li>
+              <li class="media__item"><a href="https://www.instagram.com/" class="media__link" target="_blank">instagram</a></li>
+              <li class="media__item"><a href="https://telegram.org/" class="media__link" target="_blank">telegram</a></li>
+              <li class="copyright"><span class="copyright__text">© 2019-2020 Dripmill</span></li>
+            </ul>
           </div>
-          <ul class="media order__media">
-            <li class="media__item"><a href="https://www.facebook.com/" class="media__link" target="_blank">facebook</a></li>
-            <li class="media__item"><a href="https://www.behance.net/" class="media__link" target="_blank">behance</a></li>
-            <li class="media__item"><a href="https://www.instagram.com/" class="media__link" target="_blank">instagram</a></li>
-            <li class="media__item"><a href="https://telegram.org/" class="media__link" target="_blank">telegram</a></li>
-            <li class="copyright"><span class="copyright__text">© 2019-2020 Dripmill</span></li>
-          </ul>
         </div>
       </section>
     </main>
