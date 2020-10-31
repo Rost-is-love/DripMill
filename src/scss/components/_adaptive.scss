@@ -184,6 +184,8 @@
 
   .form-input {
     width: 482px;
+    font-size: 23px;
+    // line-height: 20px;
   }
 
   .project {
@@ -1273,6 +1275,18 @@
     @include placeholder {
       opacity: 1;
     }
+  }
+}
+
+@media (max-height: 576px) and (orientation: landscape) {
+  .contacts-bg {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) and (orientation: landscape) {
+  .contacts {
+    height: auto;
   }
 }
 
