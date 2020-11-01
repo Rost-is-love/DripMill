@@ -12,6 +12,11 @@
 // Validation
 
 const thanks = document.querySelector('.thanks-popup');
+const body = document.body;
+
+let disableScroll = function () {
+  body.classList.add('disable-scroll');  
+}
 
 const validateForms = (selector, rules, successModal, yaGoal) => {
   new window.JustValidate(selector, {
@@ -25,6 +30,7 @@ const validateForms = (selector, rules, successModal, yaGoal) => {
 				if (xhr.readyState === 4) {
 					if (xhr.status === 200) {
             thanks.classList.add('thanks-popup-open');
+            disableScroll();
 					}
 				}
 			};  
@@ -37,7 +43,7 @@ const validateForms = (selector, rules, successModal, yaGoal) => {
   });
 };
 
-validateForms('.form', { email: {required: true, email: true}, tel: {required: true} }, '.thanks-popup-open', 'send goal');
+validateForms('.form', { email: {required: true, email: true}, /* tel: {required: true}  */}, '.thanks-popup-open', 'send goal');
 
 // textarea
 

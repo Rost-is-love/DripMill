@@ -19,8 +19,8 @@
   &__body {
     position: relative;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     padding: 110px 140px 100px;
     max-width: 960px;
     max-height: 480px;
@@ -79,6 +79,10 @@
       transition: background-color 0.5s ease-in-out;
     }
   }
+}
+
+.thanks-popup__text span {
+  text-align: center;
 }
 
 .thanks-popup-open {
