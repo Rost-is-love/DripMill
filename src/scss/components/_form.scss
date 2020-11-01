@@ -54,9 +54,8 @@
   border: 1px solid var(--color-gray);
   width: 600px;
   height: 36px;
-  line-height: 40px;
 
-  &::-webkit-input-placeholder {
+  s &::-webkit-input-placeholder {
     font-weight: 400;
     font-size: 20px;
     color: var(--color-gray);
@@ -157,11 +156,20 @@
   }
 }
 
+input.customer-phone__input--large {
+  @include placeholder {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
 input.customer-phone__input--small {
   display: none;
 
   @include placeholder {
     padding-left: 0;
+    font-size: 18px;
+    line-height: 24px;
     opacity: 0;
   }
 }
