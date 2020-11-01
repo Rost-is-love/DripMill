@@ -1,9 +1,32 @@
+.site-container {
+  display: flex;
+  flex-flow: column nowrap;
+  height: 100%;
+}
+
+.wrapper {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: block;
+  flex: 1 1 auto;
+}
+
 .first {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
   display: flex;
   align-items: flex-end;
   padding-bottom: 15px;
   height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   min-height: 450px;
+  max-width: 100%;
   background-image: url("../img/background-logo.svg");
   background-position: center;
   background-repeat: no-repeat;
@@ -40,6 +63,7 @@
   position: absolute;
   left: 0;
   top: 0;
+  height: calc(var(--vh, 1vh) * 100);
   display: none;
   opacity: 0;
 
@@ -90,7 +114,7 @@
   &__6 {
     position: absolute;
     left: 35vw;
-    top: 42vh;
+    top: 35vh;
     width: vwm(87);
     height: vwm(94);
     transform: rotate(-30deg);
@@ -117,7 +141,7 @@
   &__9 {
     position: absolute;
     left: 47vw;
-    top: 77vh;
+    top: 62vh;
     width: vwm(29);
     height: vwm(29);
     transform: rotate(-120deg);
@@ -126,7 +150,7 @@
   &__10 {
     position: absolute;
     left: 75vw;
-    top: 70vh;
+    top: 55vh;
     width: vwm(56);
     height: vwm(46);
     transform: rotate(30deg);

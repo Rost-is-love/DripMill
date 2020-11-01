@@ -3,6 +3,7 @@
   align-items: flex-end;
   padding-bottom: 15px;
   height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   min-height: 400px;
 
   &__main {
