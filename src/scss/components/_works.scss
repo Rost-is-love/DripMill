@@ -118,7 +118,7 @@
 
 @keyframes circle {
   from {
-    transform: scale(1);
+    transform: translate(0, 0) scale(1);
   }
 
   to {
@@ -129,7 +129,7 @@
 @keyframes dash {
   from {
     stroke-dashoffset: 15000;
-    transform: scale(1);
+    transform: translate(0, 0) scale(1);
   }
 
   to {

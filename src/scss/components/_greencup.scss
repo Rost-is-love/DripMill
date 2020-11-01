@@ -32,7 +32,7 @@
 
   &__circle {
     fill: var(--color-green);
-    animation: circle 15s infinite;
+    animation: circle-greencup 15s infinite;
   }
 
   &__path {
@@ -43,15 +43,25 @@
     stroke-linecap: round;
     stroke-miterlimit: 10;
     stroke-width: 25.87px;
-    animation: dash-green 15s infinite;
+    animation: dash-greencup 15s infinite;
     animation-fill-mode: forwards;
   }
 }
 
-@keyframes dash-green {
+@keyframes circle-greencup {
+  from {
+    transform: translate(0, 0) scale(1);
+  }
+
+  to {
+    transform: translate(-50%, -50%) scale(2);
+  }
+}
+
+@keyframes dash-greencup {
   from {
     stroke-dashoffset: 15000;
-    transform: translate(0, 240px) scale(1);
+    transform: translate(0, 25%) scale(1);
   }
 
   to {
@@ -70,9 +80,9 @@
 
 .work-pictures {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   margin-top: 115px;
-  width: 100%;
+  max-width: 100%;
 }
 
 .work-img {
