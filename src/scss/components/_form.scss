@@ -156,21 +156,9 @@
   }
 }
 
-input.customer-phone__input--large {
+input.customer-phone__input {
   @include placeholder {
-    font-size: 18px;
-    line-height: 24px;
-  }
-}
-
-input.customer-phone__input--small {
-  display: none;
-
-  @include placeholder {
-    padding-left: 0;
-    font-size: 18px;
-    line-height: 24px;
-    opacity: 0;
+    font-size: 23px;
   }
 }
 

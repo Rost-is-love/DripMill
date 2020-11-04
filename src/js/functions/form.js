@@ -9,6 +9,14 @@
   el.oldChecked = el.checked;
 } */
 
+const inp = document.querySelector('.customer-phone__input');
+  window.addEventListener('resize', changePlaceholder);
+  changePlaceholder.call(window);
+
+function changePlaceholder() {
+  inp.setAttribute('placeholder', this.innerWidth >= 576 ? 'или мессенджер' : 'телефон');
+}
+
 // Validation
 
 const thanks = document.querySelector('.thanks-popup');
@@ -43,7 +51,7 @@ const validateForms = (selector, rules, successModal, yaGoal) => {
   });
 };
 
-validateForms('.form', { email: {required: true, email: true}, /* tel: {required: true}  */}, '.thanks-popup-open', 'send goal');
+validateForms('.form', { email: {required: true, email: true}, tel: {required: true} }, '.thanks-popup-open', 'send goal');
 
 // textarea
 

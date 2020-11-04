@@ -1305,15 +1305,11 @@
     }
   }
 
-  input.customer-phone__input--large {
-    display: none;
-  }
-
-  input.customer-phone__input--small {
-    display: block;
-
+  input.customer-phone__input {
     @include placeholder {
-      opacity: 1;
+      padding-left: 0;
+      font-size: 18px;
+      line-height: 24px;
     }
   }
 
