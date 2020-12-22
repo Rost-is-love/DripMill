@@ -51,14 +51,14 @@ const resources = () => {
 
 const imgToApp = () => {
   return src(['./src/img/**.jpg', './src/img/**.png', './src/img/**.jpeg', './src/img/*.svg'])
-    .pipe(
+/*     .pipe(
 			imagemin({
 				progressive: true,
 				svgoPlugins: [{ removeViewBox: false }],
 				interlaced: true,
-				optimizationLevel: 2 // 0 to 7
+				optimizationLevel: 7 // 0 to 7
 			})
-    )
+    ) */
     .pipe(dest('./app/img'))
 }
 
@@ -238,17 +238,17 @@ exports.fontsStyle = fontsStyle;
 exports.default = series(clean, parallel(htmlInclude, scripts, fonts, resources, imgToApp, svgSprites), fontsStyle, styles, watchFiles);
 
 // BUILD
-const tinypng = () => {
-  return src(['./src/img/**.jpg', './src/img/**.png', './src/img/**.jpeg'])
-    .pipe(tiny({
-      key: 'HkdjDW01hVL5Db6HXSYlnHMk9HCvQfDT',
-      sigFile: './app/img/.tinypng-sigs',
-      parallel: true,
-      parallelMax: 50,
-      log: true,
-    }))
-    .pipe(dest('./app/img'))
-}
+// const tinypng = () => {
+//   return src(['./src/img/**.jpg', './src/img/**.png', './src/img/**.jpeg'])
+//     .pipe(tiny({
+//       key: 'dm4lZjhcCClZTfSzrsgy8Xcwd3nC3663',
+//       sigFile: './app/img/.tinypng-sigs',
+//       parallel: true,
+//       parallelMax: 50,
+//       log: true,
+//     }))
+//     .pipe(dest('./app/img'))
+// }
 
 const stylesBuild = () => {
   return src('./src/scss/**/*.scss')
@@ -318,17 +318,17 @@ const rewrite = () => {
     .pipe(dest('app'));
 }
 
-const htmlMinify = () => {
-  return src('app/**/*.html')
-    .pipe(htmlmin({
-      collapseWhitespace: true
-    }))
-    .pipe(dest('app'));
-}
+// const htmlMinify = () => {
+//   return src('app/**/*.html')
+//     .pipe(htmlmin({
+//       collapseWhitespace: true
+//     }))
+//     .pipe(dest('app'));
+// }
 
 exports.cache = series(cache, rewrite);
 
-exports.build = series(clean, parallel(htmlInclude, scriptsBuild, fonts, resources, imgToApp, svgSprites), fontsStyle, stylesBuild, htmlMinify, tinypng);
+exports.build = series(clean, parallel(htmlInclude, scriptsBuild, fonts, resources, imgToApp, svgSprites), fontsStyle, stylesBuild);
 
 
 // deploy
