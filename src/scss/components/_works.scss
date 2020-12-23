@@ -68,26 +68,25 @@
   }
 }
 
-.work-3 {
-  margin-top: 115px;
-  margin-bottom: 110px;
+.work-wide {
+  margin-top: 120px;
+  margin-bottom: 90px;
 
-  &__rect {
-    fill: #ff794a;
+  &__bg {
+    display: flex;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 100%;
+    background-image: url(../../img/candy_bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: var(--color-black);
   }
 
-  &__circle {
-    fill: var(--color-green);
-  }
-
-  &__path {
-    fill: none;
-    stroke: var(--color-white);
-    stroke-dasharray: 15000;
-    stroke-dashoffset: 15000;
-    stroke-linecap: round;
-    stroke-miterlimit: 10;
-    stroke-width: 25.87px;
+  &__video {
+    width: 100%;
+    height: 100%;
   }
 
   &__title {
@@ -97,43 +96,13 @@
 
   &__dsr {
     padding-left: 20px;
-    max-width: 930px;
+    max-width: 950px;
     line-height: 40px;
   }
-
-  &__picture-mob {
-    display: none;
-    opacity: 0;
-  }
 }
 
-.path-animation {
-  animation: dash 15s infinite;
-  animation-fill-mode: forwards;
-}
-
-.circle-animation {
-  animation: circle 15s infinite;
-}
-
-@keyframes circle {
-  from {
-    transform: translate(0, 0) scale(1);
-  }
-
-  to {
-    transform: translate(-50%, -50%) scale(2);
-  }
-}
-
-@keyframes dash {
-  from {
-    stroke-dashoffset: 15000;
-    transform: translate(0, 0) scale(1);
-  }
-
-  to {
-    stroke-dashoffset: 0;
-    transform: translate(-50%, -50%) scale(2);
+.work-6 {
+  &__bg {
+    background-image: url(../../img/equinox-bg.jpg);
   }
 }

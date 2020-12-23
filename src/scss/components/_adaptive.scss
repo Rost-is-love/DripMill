@@ -467,7 +467,7 @@
     }
   }
 
-  .work-3 {
+  .work-wide {
     margin-top: 70px;
     margin-bottom: 75px;
 
@@ -703,7 +703,7 @@
     }
   }
 
-  .work-3 {
+  .work-wide {
     margin-top: 50px;
     margin-bottom: 45px;
 
@@ -999,21 +999,15 @@
     }
   }
 
-  .work-3 {
+  .work-wide {
     margin-top: 0;
+
+    &__bg {
+      margin-bottom: 0;
+    }
 
     &__title {
       padding-left: 0;
-    }
-
-    &__picture {
-      display: none;
-      opacity: 0;
-    }
-
-    &__picture-mob {
-      display: block;
-      opacity: 1;
     }
   }
 
