@@ -29,6 +29,8 @@ const revRewrite = require('gulp-rev-rewrite');
 const revdel = require('gulp-rev-delete-original');
 const htmlmin = require('gulp-htmlmin');
 const imagemin = require("gulp-imagemin");
+const webp = require('gulp-webp');
+const webphtml = require('gulp-webp-html');
 
 // DEV
 //svg sprite
@@ -51,6 +53,12 @@ const resources = () => {
 
 const imgToApp = () => {
   return src(['./src/img/**.jpg', './src/img/**.png', './src/img/**.jpeg', './src/img/*.svg'])
+    .pipe(
+      webp({
+        quality: 100
+      })
+    )
+    .pipe(src(['./src/img/**.jpg', './src/img/**.png', './src/img/**.jpeg', './src/img/*.svg']))
 /*     .pipe(
 			imagemin({
 				progressive: true,
@@ -74,6 +82,7 @@ const htmlInclude = () => {
       prefix: '@',
       basepath: '@file'
     }))
+    .pipe(webphtml())
     .pipe(dest('./app'))
     .pipe(browserSync.stream());
 }

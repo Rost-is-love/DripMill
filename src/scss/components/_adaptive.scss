@@ -113,9 +113,9 @@
       }
     }
 
-    &__img {
+    picture {
       &:first-child {
-        margin: 12.5vw 0 18.5vw;
+        margin: 12.5vw auto 18.5vw;
         max-width: 71%;
       }
     }

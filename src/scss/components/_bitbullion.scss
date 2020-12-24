@@ -16,13 +16,10 @@
     }
   }
 
-  &__pictures {
-    align-items: center;
-  }
-
-  &__img {
+  picture {
     &:first-child {
-      margin: 12vw 0 23vw;
+      margin: 12vw auto 23vw;
+      width: 100%;
       max-width: 65%;
     }
   }
