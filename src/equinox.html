@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+  <link rel="stylesheet" href="css/main.min.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+  <link rel="manifest" href="img/site.webmanifest">
+  <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-config" content="img/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+  <title>EquinoX</title>
+</head>
+
+<body data-id-page="equinox">
+  <div class="site-container">
+    @include('html/header.html')
+    <main class="main">
+      <section class="equinox">
+        <div class="work-container equinox__container">
+          <h1 class="work-title equinox__title">лэндинг для геймдев студии EquinoX</h1>
+          <h2 class="visually-hidden" data-id-nav="equinox">Empty</h2>
+          <p class="work-text equinox__text">
+            <a href="http://www.dripmill.com/equinox/site" class="site-link equinox__link" target="_blank">www.dripmill.com/equinox/site</a>
+            студия EquinoX разрабатывает игры. большинство проектов&nbsp;&mdash; это игры для смартфонов. поскольку большинство игр о&nbsp;космосе, мы&nbsp;решили поддержать эту тематику на&nbsp;сайте
+          </p>
+          <div class="work-video-bg equinox__video-bg">
+            <video src="./video/equinox.mp4" class="work-video equinox__video" type="video/mp4" video autoplay loop muted playsinline webkit-playinginline></video>
+          </div>
+          <div class="work-authors equinox__authors">
+            <div class="designer">
+              <span class="designer__title">дизайнер</span>
+              <span class="designer__name cequinox__designer-name">Марк Ломакин</span>
+            </div>
+            <div class="copywriter">
+              <span class="copywriter__title">верстальщик</span>
+              <span class="copywriter__name equinox__copywriter-name">Ростислав Антонов</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    @include('html/footer.html')
+  </div>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

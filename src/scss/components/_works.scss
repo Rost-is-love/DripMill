@@ -36,6 +36,11 @@
     transition: transform 0.5s ease-in-out;
   }
 
+  &:hover .work-wide__video {
+    transform: scale(1.2);
+    transition: transform 0.5s ease-in-out;
+  }
+
   &:first-child {
     margin-right: 20px;
   }
@@ -74,10 +79,11 @@
 
   &__bg {
     display: flex;
+    overflow: hidden;
     margin-bottom: 10px;
     width: 100%;
     height: 100%;
-    background-image: url("../../img/candy_bg.jpg");
+    background-image: url("../img/candy_bg.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -87,6 +93,7 @@
   &__video {
     width: 100%;
     height: 100%;
+    transition: transform 0.5s ease-in-out;
   }
 
   &__title {
@@ -103,6 +110,6 @@
 
 .work-6 {
   &__bg {
-    background-image: url("../../img/equinox-bg.jpg");
+    background-image: url("../img/equinox-bg.jpg");
   }
 }

@@ -1,4 +1,4 @@
-.greencup {
+.canby-bitten {
   &__text {
     margin-bottom: 55px;
   }
@@ -24,50 +24,20 @@
   line-height: 40px;
 }
 
-.greencup-animation {
-
-  &__rect {
-    fill: #ff794a;
-  }
-
-  &__circle {
-    fill: var(--color-green);
-    animation: circle-greencup 15s infinite;
-  }
-
-  &__path {
-    fill: none;
-    stroke: var(--color-white);
-    stroke-dasharray: 15000;
-    stroke-dashoffset: 15000;
-    stroke-linecap: round;
-    stroke-miterlimit: 10;
-    stroke-width: 25.87px;
-    animation: dash-greencup 15s infinite;
-    animation-fill-mode: forwards;
-  }
+.work-video-bg {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/candy-videobg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: var(--color-black);
 }
 
-@keyframes circle-greencup {
-  from {
-    transform: translate(0, 0) scale(1);
-  }
-
-  to {
-    transform: translate(-50%, -50%) scale(2);
-  }
-}
-
-@keyframes dash-greencup {
-  from {
-    stroke-dashoffset: 15000;
-    transform: translate(0, 25%) scale(1);
-  }
-
-  to {
-    stroke-dashoffset: 0;
-    transform: translate(-50%, 0) scale(2);
-  }
+.work-video {
+  width: 100%;
+  height: 100%;
 }
 
 .work-second-title {
@@ -76,12 +46,13 @@
 
 .work-second-text {
   margin-bottom: 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .work-pictures {
   display: flex;
   flex-direction: column;
-  margin-top: 115px;
   max-width: 100%;
 }
 

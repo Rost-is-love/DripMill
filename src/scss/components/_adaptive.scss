@@ -69,7 +69,7 @@
     line-height: 24px;
   }
 
-  .greencup {
+  .canby-bitten {
     &__text {
       margin-bottom: 68px;
     }
@@ -81,10 +81,6 @@
 
   .work-second-text {
     margin-bottom: 0;
-  }
-
-  .work-pictures {
-    margin-top: 90px;
   }
 
   .work-solgan {
@@ -124,6 +120,12 @@
   .birdie {
     &__title {
       margin-bottom: 15px;
+    }
+  }
+
+  .equinox {
+    &__title {
+      max-width: 600px;
     }
   }
 
@@ -347,7 +349,7 @@
   }
 
   .phone-number {
-    font-size: vw2(50);
+    font-size: vw2(60);
   }
 
   .email {
@@ -508,10 +510,6 @@
     margin-left: 14vw;
   }
 
-  .work-pictures {
-    margin-top: 90px;
-  }
-
   .work-authors {
     margin-bottom: 50px;
     padding-top: 30px;
@@ -637,7 +635,7 @@
   }
 
   .phone-number {
-    font-size: vw2(70);
+    font-size: vw2(80);
   }
 
   .email {
@@ -731,7 +729,19 @@
     line-height: 22px;
   }
 
-  .greencup {
+  .canby-bitten {
+    &__text {
+      margin-bottom: 40px;
+    }
+  }
+
+  .tryoz {
+    &__pictures {
+      margin-top: 40px;
+    }
+  }
+
+  .equinox {
     &__text {
       margin-bottom: 40px;
     }
@@ -739,10 +749,8 @@
 
   .work-second-text {
     margin-bottom: 0;
-  }
-
-  .work-pictures {
-    margin-top: 70px;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 
   .work-solgan {
@@ -935,7 +943,7 @@
   }
 
   .phone-number {
-    font-size: vwm(26);
+    font-size: vwm(30);
   }
 
   .email {
@@ -1032,7 +1040,7 @@
     line-height: vwm(24);
   }
 
-  .greencup {
+  .canby-bitten {
     &__text {
       margin-bottom: 28px;
     }
@@ -1040,10 +1048,8 @@
 
   .work-second-text {
     margin-bottom: 0;
-  }
-
-  .work-pictures {
-    margin-top: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 
   .work-solgan {
@@ -1109,6 +1115,18 @@
 
     &__pictures {
       margin-top: 30px;
+    }
+  }
+
+  .tryoz {
+    &__pictures {
+      margin-top: 28px;
+    }
+  }
+
+  .equinox {
+    &__text {
+      margin-bottom: 28px;
     }
   }
 
