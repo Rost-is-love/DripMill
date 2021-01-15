@@ -1,4 +1,6 @@
-<form action="mail.php" method="POST" class="form">
+<form action="mail.php" method="POST" class="form" enctype="multipart/form-data">
+  <input type="hidden" name="admin_email[]" value="hello@dripmill.com">
+  <input type="hidden" name="form_subject" value="Тема письма">
   <div class="project form__item">
     <span class="form-title project__title">проект</span>
     <div class="project__items">
